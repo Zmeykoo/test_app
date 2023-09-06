@@ -11,7 +11,7 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/code')
+@app.route('/code', methods=['POST'])
 def show_code():
     with open('app.py', 'r') as f:
         code = f.read()
