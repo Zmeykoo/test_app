@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'VladFlaskApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AC22E34F230E4E41BC19EDA06B208B35 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E6813FC66412469499E4FF7CFD2EF31D }}
