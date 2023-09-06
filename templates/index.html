@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Deployment Tutorial 1</title>
+  <title>Deployment</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -14,8 +14,6 @@
 <body style="background: #000;">
  <div class="login">
 	<h1>Sales Forecasting</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="rate" placeholder="rate" required="required" />
         <input type="text" name="sales in first month" placeholder="sales in first month" required="required" />
@@ -28,5 +26,8 @@
    {{ prediction_text }}
 
  </div>
+	<form action="/code">
+		<button type="submit"> Showe code</button>
+	</form>
 </body>
 </html>

@@ -11,6 +11,13 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/code')
+def show_code():
+    with open('app.py', 'r') as f:
+        code = f.read()
+    return render_template('app_code.html', code='app.py:\n{}'.format(code))
+
+
 @app.route('/predict', methods=['POST'])
 def predict():
 
@@ -34,4 +41,4 @@ def results():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
